@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define DIM 1039596
+//#define DIM 1039596
+
+#define DIM 103
 
 
 int main(int argc, char *argv[])

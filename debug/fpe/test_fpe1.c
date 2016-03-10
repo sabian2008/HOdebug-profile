@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #ifdef TRAPFPE
-#include "fpe_x87_sse.h"
+#include "fpe_x87_sse/fpe_x87_sse.h"
 #endif
 
 int main(int argc, char *argv[])
@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
   scanf("%f",&b);
 
   tmp = a / b;
-  
+
   c = tmp;
 
   printf("c = %f \n", c);
-  
+
   return(EXIT_SUCCESS);
 }

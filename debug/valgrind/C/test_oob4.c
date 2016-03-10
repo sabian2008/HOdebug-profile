@@ -6,16 +6,18 @@
 void mysub(float **a, int dim)
 {
   int j;
-  
+
   (*a) = (float *)malloc(sizeof(float)*dim);
-  
+
   for(j=0; j<dim; j++)
     {
       (*a)[j] = 7.;
     }
-  
+
+  free(*a)
+
 }
-     
+
 
 
 int main(int argc, char *argv[])
