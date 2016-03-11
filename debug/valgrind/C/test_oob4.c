@@ -13,9 +13,6 @@ void mysub(float **a, int dim)
     {
       (*a)[j] = 7.;
     }
-
-  free(*a)
-
 }
 
 
@@ -32,9 +29,14 @@ int main(int argc, char *argv[])
   for(i=0; i<last; i++)
     {
       mysub(&a, mydim);
+      if (i == last-1)
+      {
+        printf("a = %f \n", a[0]);
+      }
+      free(a);
     }
 
-  printf("a = %f \n", a[0]);
+
 
   return(EXIT_SUCCESS);
 }
